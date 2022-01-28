@@ -14,7 +14,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Live Site URL: [LIVE SITE - still work in progress :)](https://epikle.github.io/nft-preview-card-component-main/)
+- Live Site URL: [LIVE SITE - still work in progress :)](https://epikle.github.io/time-tracking-dashboard-main/)
 
 
 ## My process
