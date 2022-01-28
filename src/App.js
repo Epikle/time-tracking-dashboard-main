@@ -6,8 +6,6 @@ import Card from './components/Card';
 
 import './app.css';
 
-
-
 const App = () => {
   const [tracking, setTracking] = useState(TRACKING_DATA);
   const [linkSelection, setLinkSelection] = useState('daily');
