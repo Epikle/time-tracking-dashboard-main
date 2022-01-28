@@ -9,8 +9,8 @@ const Card = (props) => {
 
   const cardTitle = props.title;
   const cardTimeframes = props.timeframes;
-  const currentHrs = cardTimeframes.daily.current;
-  const previousHrs = cardTimeframes.daily.previous;
+  const currentHrs = cardTimeframes[props.selection].current;
+  const previousHrs = cardTimeframes[props.selection].previous;
 
   return (
     <li>

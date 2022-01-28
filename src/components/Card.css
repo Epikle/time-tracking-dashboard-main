@@ -35,6 +35,13 @@
   background: var(--color-blue-800);
   border-radius: var(--border-radius);
   padding: 2rem;
+  transition: opacity 350ms ease;
+}
+
+.card__data:hover {
+  /* background: var(--color-blue-400); */
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .card__data div:first-of-type {
@@ -45,6 +52,15 @@
 
 .card__data h2 {
   font-size: 1rem;
+}
+
+.card__data img {
+  opacity: 0.6;
+  transition: opacity 200ms ease;
+}
+
+.card__data img:hover {
+  opacity: 1;
 }
 
 .card__current {

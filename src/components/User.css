@@ -42,8 +42,20 @@
   flex-direction: column;
   gap: 1rem;
 }
-.card__selection a {
-  text-decoration: none;
+
+.card__selection button {
+  background: none;
+  border: none;
+  color: var(--color-blue-100);
+  font-size: 1rem;
+}
+
+.card__selection .active:hover {
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.card__selection .current {
   color: var(--color-white);
 }
 

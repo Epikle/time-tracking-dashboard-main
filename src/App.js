@@ -112,17 +112,25 @@ const TRACKING_DATA = [
 
 const App = () => {
   const [tracking, setTracking] = useState(TRACKING_DATA);
+  const [linkSelection, setLinkSelection] = useState("daily");
+
+
+  const linkHandler = (link) => {
+    setLinkSelection(link);
+  }
+
 
   return (
     <main>
       <section>
-        <User />
+        <User selectedLink={linkHandler} />
         <ul>
           {tracking.map((cardData) => (
             <Card
               key={cardData.title}
               title={cardData.title}
               timeframes={cardData.timeframes}
+              selection={linkSelection}
             />
           ))}
         </ul>
