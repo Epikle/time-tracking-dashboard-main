@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-blue: hsl(246, 80%, 60%);
+  --color-primary-work: hsl(15, 100%, 70%);
+  --color-primary-play: hsl(195, 74%, 62%);
+  --color-primary-study: hsl(348, 100%, 68%);
+  --color-primary-exercise: hsl(145, 58%, 55%);
+  --color-primary-social: hsl(264, 64%, 52%);
+  --color-primary-care: hsl(43, 84%, 65%);
+
+  --color-blue-900: hsl(226, 43%, 10%);
+  --color-blue-800: hsl(235, 46%, 20%);
+  --color-blue-400: hsl(235, 45%, 61%);
+  --color-blue-100: hsl(236, 100%, 87%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  --border-radius: 18px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--color-white);
+  background: var(--color-blue-900);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 2rem);
+}
+
+section {
+  width: 77%;
+  display: flex;
+  gap: 1.7rem;
+}
+
+section > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.7rem;
+  list-style: none;
+  flex: 1;
+}
+
+footer {
+  height: 2rem;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 0.75rem;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767.98px) {
+  section {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  section ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  section {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
