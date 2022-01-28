@@ -1,7 +1,7 @@
 {
-  "name": "time-tracking-dashboard-main-react",
+  "name": "time-tracking-dashboard-main",
   "version": "0.1.0",
-  "homepage": "https://epikle.github.io/frontend-mentor/",
+  "homepage": "https://epikle.github.io/time-tracking-dashboard-main/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
