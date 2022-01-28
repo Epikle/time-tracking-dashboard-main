@@ -3,21 +3,18 @@ import React from 'react';
 import './Card.css';
 import dots from '../images/icon-ellipsis.svg';
 
-const Card = (props) => {
-  const cardClass = 'card-' + props.title.toLowerCase().split(' ').join('');
+const Card = ({ title, timeframes, selection }) => {
+  const cardClass = 'card-' + title.toLowerCase().split(' ').join('');
   const classes = 'card ' + cardClass;
 
-  const cardTitle = props.title;
-  const cardTimeframes = props.timeframes;
-  const currentHrs = cardTimeframes[props.selection].current;
-  const previousHrs = cardTimeframes[props.selection].previous;
+  const { current: currentHrs, previous: previousHrs } = timeframes[selection];
 
   return (
     <li>
       <div className={classes}>
         <div className="card__data">
           <div>
-            <h2>{cardTitle}</h2>
+            <h2>{title}</h2>
             <img src={dots} alt="More" />
           </div>
           <div>
