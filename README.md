@@ -14,14 +14,14 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Links
 
-- Live Site URL: [LIVE SITE - still work in progress :)](https://epikle.github.io/time-tracking-dashboard-main/)
+- Live Site URL: [LIVE SITE](https://epikle.github.io/time-tracking-dashboard-main/)
 
 
 ## My process
 
 ### Built with
 
-- React, my first React project
+- React, my first React project :)
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox

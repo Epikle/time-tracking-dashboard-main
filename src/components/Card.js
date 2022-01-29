@@ -19,7 +19,7 @@ const Card = ({ title, timeframes, selection }) => {
           </div>
           <div>
             <p className="card__current">{currentHrs}hrs</p>
-            <p className="card__previous">Previous - {previousHrs}hrs</p>
+            <p className="card__previous">Last Week - {previousHrs}hrs</p>
           </div>
         </div>
       </div>

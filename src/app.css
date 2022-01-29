@@ -22,7 +22,8 @@
 
   --color-white: hsl(0, 0%, 100%);
 
-  --border-radius: 18px;
+  --border-radius-1: 18px;
+  --border-radius-2: 20px;
 }
 
 body {
@@ -47,25 +48,16 @@ section {
 }
 
 section > ul {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.7rem;
   list-style: none;
-  flex: 1;
-}
-
-footer {
-  height: 2rem;
-  font-size: 11px;
-  text-align: center;
-  padding-top: 0.75rem;
-}
-footer a {
-  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 767.98px) {
   section {
+    width: 95%;
     flex-direction: column;
     padding: 0.75rem;
   }
@@ -77,6 +69,7 @@ footer a {
 
 @media (max-width: 992px) and (min-width: 768px) {
   section {
+    width: 95%;
     flex-direction: column;
     padding: 0.75rem;
   }

@@ -1,5 +1,5 @@
 .card {
-  border-radius: 20px;
+  border-radius: var(--border-radius-2);
   background: var(--color-blue-800);
   padding-top: 3rem;
 }
@@ -9,7 +9,7 @@
 }
 
 .card-play {
-  background: no-repeat top -0.75rem right 1rem url('../images/icon-play.svg') var(--color-primary-play);
+  background: no-repeat top -0.5rem right 1rem url('../images/icon-play.svg') var(--color-primary-play);
 }
 
 .card-study {
@@ -33,13 +33,13 @@
 
 .card__data {
   background: var(--color-blue-800);
-  border-radius: var(--border-radius);
-  padding: 2rem;
+  border-radius: var(--border-radius-1);
+  padding: 2vw;
+
   transition: opacity 350ms ease;
 }
 
 .card__data:hover {
-  /* background: var(--color-blue-400); */
   opacity: 0.8;
   cursor: pointer;
 }
@@ -50,12 +50,18 @@
   align-items: center;
 }
 
+.card__data div:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
 .card__data h2 {
   font-size: 1rem;
 }
 
 .card__data img {
   opacity: 0.6;
+
   transition: opacity 200ms ease;
 }
 
@@ -64,8 +70,8 @@
 }
 
 .card__current {
-  font-size: 3.5rem;
-  margin: 1.25rem 0 0.5rem 0;
+  font-size: 4vw;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 .card__previous {
@@ -74,13 +80,19 @@
 }
 
 @media (max-width: 992px) {
-  .card__current {
-    font-size: 2rem;
-    margin-top: 1rem;
+  .card__data {
+    padding: 2rem;
+  }
+  .card__data div:first-of-type {
+    margin-bottom: 0.75rem;
   }
   .card__data div:last-of-type {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .card__current {
+    font-size: 2rem;
+    padding: 0;
   }
 }

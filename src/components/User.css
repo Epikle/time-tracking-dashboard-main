@@ -1,23 +1,24 @@
 .card-user {
-  max-width: 16rem;
-  border-radius: 20px;
-  background: var(--color-blue-800);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 16rem;
+  background: var(--color-blue-800);
+  border-radius: var(--border-radius-2);
 }
 
 .card__user {
-  background: var(--color-primary-blue);
-  padding: 2rem;
-  border-radius: var(--border-radius);
   flex: 1;
+  padding: 2rem;
+  background: var(--color-primary-blue);
+  border-radius: var(--border-radius-1);
 }
+
 .card__user img {
-  border: 3px solid var(--color-white);
-  border-radius: 50%;
   height: 5.25rem;
   margin-bottom: 2rem;
+  border: 3px solid var(--color-white);
+  border-radius: 50%;
 }
 
 .card__user h1 {
@@ -31,32 +32,38 @@
 }
 
 .card__selection {
-  background: var(--color-blue-800);
-  border-radius: var(--border-radius);
   padding: 2rem;
+  background: var(--color-blue-800);
+  border-radius: var(--border-radius-1);
 }
 
 .card__selection ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.1rem;
+  list-style: none;
 }
 
 .card__selection button {
   background: none;
   border: none;
   color: var(--color-blue-100);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.6;
+
+  transition: all 300ms ease;
 }
 
 .card__selection .active:hover {
   cursor: pointer;
   color: var(--color-white);
+  opacity: 1;
 }
 
 .card__selection .current {
   color: var(--color-white);
+  opacity: 1;
 }
 
 @media (max-width: 992px) {
@@ -73,10 +80,10 @@
   .card__user h1 {
     font-size: 1.5rem;
   }
-  .card__user div {
+  .card__user > div {
     padding-left: 1rem;
   }
-  .card__selection ul {
+  .card__selection > ul {
     flex-direction: row;
     justify-content: space-between;
   }
